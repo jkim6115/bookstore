@@ -7,3 +7,17 @@ spring:
       enabled: true
     restart:
       enabled: true
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yhk?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: yhk
+    password: a1234
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddlAuto: update
+    open-in-view: false

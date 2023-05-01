@@ -21,3 +21,6 @@ spring:
     hibernate:
       ddlAuto: update
     open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
